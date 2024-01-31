@@ -1,2 +1,9 @@
-<textarea [formControl]="control"></textarea>
+
+<form>
+  <div class="form-group">
+    <label>HTML</label>
+    <textarea class="form-control mb-3" [formControl]="control"></textarea>
+  </div>
+</form>
+
 <div [innerHTML]="control.value | sanitizeStr"></div>

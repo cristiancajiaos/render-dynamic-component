@@ -10,7 +10,7 @@ import { AlertComponent } from '../alert/alert.component';
 })
 export class RenderAlertComponent implements OnInit {
 
-  control = new FormControl('<app-alert></app-alert>');
+  control = new FormControl('<app-alert type="danger"></app-alert>');
 
   constructor(
     private injector: Injector
