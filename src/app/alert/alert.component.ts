@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-alert',
   template: `
-    <div class="alert alert-{{type}} role="alert">
+    <div class="alert alert-{{type}}" role="alert">
       <ng-content></ng-content>
     </div>
   `,

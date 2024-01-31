@@ -1,14 +1,14 @@
-import { Component, Injector, OnInit } from '@angular/core';
+import { Component, OnInit, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { FormControl } from '@angular/forms';
 import { AlertComponent } from '../alert/alert.component';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  selector: 'app-render-alert',
+  templateUrl: './render-alert.component.html',
+  styleUrls: ['./render-alert.component.scss']
 })
-export class LayoutComponent implements OnInit {
+export class RenderAlertComponent implements OnInit {
 
   control = new FormControl('<app-alert></app-alert>');
 
@@ -18,7 +18,7 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit() {
     const element = createCustomElement(AlertComponent, {injector: this.injector});
-    
+    customElements.define('app-alert', element);
   }
 
 }
