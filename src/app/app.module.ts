@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlertModule } from './alert/alert.module';
 import { RenderAlertComponent } from './render-alert/render-alert.component';
 import { AlertComponent } from './alert/alert.component';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AlertComponent } from './alert/alert.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AlertModule
+    AlertModule,
+    PipesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

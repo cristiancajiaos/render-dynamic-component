@@ -1,2 +1,2 @@
 <textarea [formControl]="control"></textarea>
-<div [innerHTML]="control.value"></div>
+<div [innerHTML]="control.value | sanitizeStr"></div>
